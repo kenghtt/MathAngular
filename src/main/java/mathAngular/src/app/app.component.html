@@ -3,3 +3,15 @@
 <section>
   <router-outlet></router-outlet>
 </section>
+
+<!--<button mat-button>Basic</button>-->
+
+<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+  <mat-button-toggle value="bold">Bold</mat-button-toggle>
+  <mat-button-toggle value="italic">Italic</mat-button-toggle>
+  <mat-button-toggle value="underline">Underline</mat-button-toggle>
+</mat-button-toggle-group>
+
+
+<button class="multipleChoiceBtn" (click)="secondClick()" mat-raised-button>HELLO JEREMY</button>
+
