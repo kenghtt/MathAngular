@@ -1,4 +1,4 @@
-package com.math.angular.demo;
+package com.math;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MathAngularApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MathAngularApplication.class, args);
+        SpringApplication.run(com.math.MathAngularApplication.class, args);
     }
 
 }
