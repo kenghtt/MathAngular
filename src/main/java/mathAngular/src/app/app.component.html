@@ -4,14 +4,16 @@
   <router-outlet></router-outlet>
 </section>
 
-<!--<button mat-button>Basic</button>-->
+<div style="text-align: center;">
+  <h1>
+    What is 5+5 = x
 
-<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-  <mat-button-toggle value="bold">Bold</mat-button-toggle>
-  <mat-button-toggle value="italic">Italic</mat-button-toggle>
-  <mat-button-toggle value="underline">Underline</mat-button-toggle>
-</mat-button-toggle-group>
+  </h1>
+</div>
 
-
-<button class="multipleChoiceBtn" (click)="secondClick()" mat-raised-button>HELLO JEREMY</button>
-
+<div style="text-align: center;">
+  <button class="multipleChoiceBtn" id="Btn1" (click)=" first($event)" mat-stroked-button>Button1</button>&nbsp;&nbsp;&nbsp;
+  <button class="multipleChoiceBtn" id="Btn2" (click)=" second()" mat-stroked-button>Button2</button>&nbsp;&nbsp;&nbsp;
+  <button class="multipleChoiceBtn" id="Btn3" (click)=" third()" mat-stroked-button>Button3</button>&nbsp;&nbsp;&nbsp;
+  <button class="multipleChoiceBtn" id="Btn4" (click)=" fourth()" mat-stroked-button>Button4</button>&nbsp;&nbsp;&nbsp;
+</div>

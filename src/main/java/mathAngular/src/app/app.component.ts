@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,20 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'mathAngular';
 
-  secondClick() {
-    console.log('clicked 22');
+  first(event) {
+    console.log(event);
   }
+
+  second() {
+    console.log('clicked 2');
+  }
+
+  third() {
+    console.log('clicked 3');
+  }
+
+  fourth() {
+    console.log('clicked 4');
+  }
+
 }

@@ -1,3 +1,9 @@
-.multipleChoiceBtn{
-  background-color: Orange;
+.multipleChoiceBtn:hover{
+  background-color: #e0e0e0;
+  /*margin-left:10px;*/
+
+
+}.multipleChoiceBtn{
+  /*margin-left:10px;*/
+
 }
