@@ -40,12 +40,12 @@ public class MathController {
         int min = 1;
         JSONArray jsonArray = new JSONArray();
         JSONObject finalObject = new JSONObject();
-        JSONObject jsonMain = new JSONObject();
+//        JSONObject jsonMain = new JSONObject();
 
 
         ArrayList arrayList = new ArrayList();
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 50; i++) {
             int x;
             int y;
             int[] questionArray;
@@ -87,7 +87,7 @@ public class MathController {
             HashMap<int[], int[]> hashMap = new HashMap<>();
             hashMap.put(questionArray, answersArray);
             JSONObject jsonObject = new JSONObject();
-//            JSONObject jsonMain = new JSONObject();
+            JSONObject jsonMain = new JSONObject();
             jsonObject.put("x", x);
             jsonObject.put("y", y);
             jsonObject.put("Answer", answer);
