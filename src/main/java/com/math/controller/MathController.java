@@ -36,15 +36,8 @@ public class MathController {
     @GetMapping("/mathQuestions")
     @ResponseBody
     public String mathQuestions() throws JSONException {
-
         int max = 5;
         int min = 1;
-//        int x;
-//        int y;
-//        int[] questionArray;
-//        int[] answersArray = new int[4];
-//        int randomAssign;
-//        int answer;
         JSONArray jsonArray = new JSONArray();
         JSONObject finalObject = new JSONObject();
 
@@ -85,7 +78,6 @@ public class MathController {
                 answersArray[3] = answer;
             }
 
-
             questionArray = new int[]{x, y, answer};
 
             arrayList.add(0, answersArray);
@@ -97,9 +89,6 @@ public class MathController {
             jsonObject.put("x", x);
             jsonObject.put("y", y);
             jsonObject.put("Answer", answer);
-            if(answersArray[0] == 0 && answersArray[1]==0 && answersArray[2]==0&& answersArray[3]==0){
-                System.out.println("000");
-            }
             jsonObject.put("potentialAnswer1", answersArray[0]);
             jsonObject.put("potentialAnswer2", answersArray[1]);
             jsonObject.put("potentialAnswer3", answersArray[2]);
@@ -107,7 +96,6 @@ public class MathController {
 
             finalObject.put("MathQuestions", jsonArray.put(jsonObject));
         }
-
         return finalObject.toString();
     }
 
