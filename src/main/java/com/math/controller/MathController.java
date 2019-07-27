@@ -40,6 +40,7 @@ public class MathController {
         int min = 1;
         JSONArray jsonArray = new JSONArray();
         JSONObject finalObject = new JSONObject();
+        JSONObject jsonMain = new JSONObject();
 
 
         ArrayList arrayList = new ArrayList();
@@ -86,6 +87,7 @@ public class MathController {
             HashMap<int[], int[]> hashMap = new HashMap<>();
             hashMap.put(questionArray, answersArray);
             JSONObject jsonObject = new JSONObject();
+//            JSONObject jsonMain = new JSONObject();
             jsonObject.put("x", x);
             jsonObject.put("y", y);
             jsonObject.put("Answer", answer);
@@ -94,9 +96,14 @@ public class MathController {
             jsonObject.put("potentialAnswer3", answersArray[2]);
             jsonObject.put("potentialAnswer4", answersArray[3]);
 
-            finalObject.put("MathQuestions", jsonArray.put(jsonObject));
+            jsonMain.put("Question "+i, jsonObject);
+
+
+            finalObject.put("MathQuestions", jsonArray.put(jsonMain));
         }
+//        return finalObject.toString();
         return finalObject.toString();
+
     }
 
 }
