@@ -96,7 +96,8 @@ public class MathController {
             jsonObject.put("potentialAnswer3", answersArray[2]);
             jsonObject.put("potentialAnswer4", answersArray[3]);
 
-            jsonMain.put("Question "+i, jsonObject);
+            // i starts at 1 rather than 0
+            jsonMain.put("Question "+ (i+1), jsonObject);
 
 
             finalObject.put("MathQuestions", jsonArray.put(jsonMain));
