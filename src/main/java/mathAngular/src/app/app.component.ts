@@ -12,23 +12,6 @@ export class AppComponent {
   response: any;
 
 
-  first(event) {
-    console.log(event);
-    console.log(this.someNum);
-    this.someNum += 1;
-  }
-
-  second() {
-    console.log('clicked 2');
-  }
-
-  third() {
-    console.log('clicked 3');
-  }
-
-  fourth() {
-    console.log('clicked 4');
-  }
 
 
   constructor(private http: HttpClient) {
@@ -47,9 +30,11 @@ export class AppComponent {
   currentQuestion = 1;
   currentQuestionArray;
 
-  checkAnswer(){
-    console.log("chceking answer...");
+  checkAnswer(event){
+    console.log(event);
   }
+
+
 
   getNextQuestion() {
     this.answer = this.response.MathQuestions[this.currentArray]["Question " + this.currentQuestion]["Answer"]
