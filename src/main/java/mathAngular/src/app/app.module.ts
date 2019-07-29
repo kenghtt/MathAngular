@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from './material'
 import {MatButtonModule} from '@angular/material/button';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {MatButtonModule} from '@angular/material/button';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

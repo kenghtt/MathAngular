@@ -4,6 +4,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -33,6 +34,7 @@ public class MathController {
         return "Hello World";
     }
 
+    @CrossOrigin
     @GetMapping("/mathQuestions")
     @ResponseBody
     public String mathQuestions() throws JSONException {

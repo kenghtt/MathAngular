@@ -6,14 +6,18 @@
 
 <div style="text-align: center;">
   <h1>
-    What is 5+5 = x
+    What is {{x}} + {{y}} = ?
 
   </h1>
 </div>
 
 <div style="text-align: center;">
-  <button class="multipleChoiceBtn" id="Btn1" (click)=" first($event)" mat-stroked-button>Button1</button>&nbsp;&nbsp;&nbsp;
-  <button class="multipleChoiceBtn" id="Btn2" (click)=" second()" mat-stroked-button>Button2</button>&nbsp;&nbsp;&nbsp;
-  <button class="multipleChoiceBtn" id="Btn3" (click)=" third()" mat-stroked-button>Button3</button>&nbsp;&nbsp;&nbsp;
-  <button class="multipleChoiceBtn" id="Btn4" (click)=" fourth()" mat-stroked-button>Button4</button>&nbsp;&nbsp;&nbsp;
+  <button class="multipleChoiceBtn" id="Btn1" (click)=" getNextQuestion() ; checkAnswer()" mat-stroked-button>{{potentialAnswer1}}</button>&nbsp;&nbsp;&nbsp;
+  <button class="multipleChoiceBtn" id="Btn2" (click)=" getNextQuestion() ; checkAnswer()" mat-stroked-button>{{potentialAnswer2}}</button>&nbsp;&nbsp;&nbsp;
+  <button class="multipleChoiceBtn" id="Btn3" (click)=" getNextQuestion() ; checkAnswer()" mat-stroked-button>{{potentialAnswer3}}</button>&nbsp;&nbsp;&nbsp;
+  <button class="multipleChoiceBtn" id="Btn4" (click)=" getNextQuestion() ; checkAnswer()" mat-stroked-button>{{potentialAnswer4}}</button>&nbsp;&nbsp;&nbsp;
+  <!--<button class="multipleChoiceBtn" id="Btn5" (click)=" getNextQuestion()" mat-stroked-button>Jeremy Button</button>&nbsp;&nbsp;&nbsp;-->
+
+
 </div>
+
