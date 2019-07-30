@@ -29,10 +29,15 @@ export class AppComponent {
   currentArray = 0;
   currentQuestion = 1;
   currentQuestionArray;
+  numOfCorrectAnswers = 0;
 
   checkAnswer(event){
-    console.log(event);
+    if(event.target.innerText == this.answer){
+      this.numOfCorrectAnswers++;
+    }
+    console.log("Correct Answers: "+this.numOfCorrectAnswers);
   }
+
 
 
 
