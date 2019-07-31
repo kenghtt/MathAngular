@@ -5,39 +5,39 @@
   <router-outlet></router-outlet>
 </section>
 
-<!--Need to move everything below to correct html page where user can play the game-->
-<div class="2ndHeader">
-  <div id="countDownTimer" style="text-align: right;">
-    {{countDownNumber}}
-  </div>
-</div>
+<!--&lt;!&ndash;Need to move everything below to correct html page where user can play the game&ndash;&gt;-->
+<!--<div class="2ndHeader">-->
+  <!--<div id="countDownTimer" style="text-align: right;">-->
+    <!--{{countDownNumber}}-->
+  <!--</div>-->
+<!--</div>-->
 
-<div style="text-align: center;">
-  <h1>
-    What is {{x}} + {{y}} = ?
-  </h1>
-</div>
-
-
-<div style="text-align: center;">
-
-  <!--On Click, Check Answer first, and then get next question-->
-  <button class="multipleChoiceBtn" id="Btn1" (click)="checkAnswer($event); getNextQuestion() " mat-stroked-button>
-    {{potentialAnswer1}}
-  </button>&nbsp;&nbsp;&nbsp;
-  <button class="multipleChoiceBtn" id="Btn2" (click)="checkAnswer($event); getNextQuestion() " mat-stroked-button>
-    {{potentialAnswer2}}
-  </button>&nbsp;&nbsp;&nbsp;
-  <button class="multipleChoiceBtn" id="Btn3" (click)="checkAnswer($event); getNextQuestion() " mat-stroked-button>
-    {{potentialAnswer3}}
-  </button>&nbsp;&nbsp;&nbsp;
-  <button class="multipleChoiceBtn" id="Btn4" (click)="checkAnswer($event); getNextQuestion()" mat-stroked-button>
-    {{potentialAnswer4}}
-  </button>&nbsp;&nbsp;&nbsp;
-  <button class="multipleChoiceBtn" id="Btn5" (click)="startCountdown()" mat-stroked-button>
-    Start Timer {{countDownNumber}}
-  </button>&nbsp;&nbsp;&nbsp;
+<!--<div style="text-align: center;">-->
+  <!--<h1>-->
+    <!--What is {{x}} + {{y}} = ?-->
+  <!--</h1>-->
+<!--</div>-->
 
 
-</div>
+<!--<div style="text-align: center;">-->
+
+  <!--&lt;!&ndash;On Click, Check Answer first, and then get next question&ndash;&gt;-->
+  <!--<button class="multipleChoiceBtn" id="Btn1" (click)="checkAnswer($event); getNextQuestion() " mat-stroked-button>-->
+    <!--{{potentialAnswer1}}-->
+  <!--</button>&nbsp;&nbsp;&nbsp;-->
+  <!--<button class="multipleChoiceBtn" id="Btn2" (click)="checkAnswer($event); getNextQuestion() " mat-stroked-button>-->
+    <!--{{potentialAnswer2}}-->
+  <!--</button>&nbsp;&nbsp;&nbsp;-->
+  <!--<button class="multipleChoiceBtn" id="Btn3" (click)="checkAnswer($event); getNextQuestion() " mat-stroked-button>-->
+    <!--{{potentialAnswer3}}-->
+  <!--</button>&nbsp;&nbsp;&nbsp;-->
+  <!--<button class="multipleChoiceBtn" id="Btn4" (click)="checkAnswer($event); getNextQuestion()" mat-stroked-button>-->
+    <!--{{potentialAnswer4}}-->
+  <!--</button>&nbsp;&nbsp;&nbsp;-->
+  <!--<button class="multipleChoiceBtn" id="Btn5" (click)="startCountdown()" mat-stroked-button>-->
+    <!--Start Timer {{countDownNumber}}-->
+  <!--</button>&nbsp;&nbsp;&nbsp;-->
+
+
+<!--</div>-->
 

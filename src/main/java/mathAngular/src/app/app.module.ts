@@ -11,6 +11,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from './material'
 import {MatButtonModule} from '@angular/material/button';
 import {HttpClientModule} from "@angular/common/http";
+import { PlayComponent } from './play/play.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {HttpClientModule} from "@angular/common/http";
     NavComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    PlayComponent
   ],
   imports: [
     BrowserModule,
