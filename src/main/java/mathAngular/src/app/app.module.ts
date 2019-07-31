@@ -12,6 +12,7 @@ import {MaterialModule} from './material'
 import {MatButtonModule} from '@angular/material/button';
 import {HttpClientModule} from "@angular/common/http";
 import { PlayComponent } from './play/play.component';
+import { HighScoreComponent } from './high-score/high-score.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PlayComponent } from './play/play.component';
     AboutComponent,
     ContactComponent,
     HomeComponent,
-    PlayComponent
+    PlayComponent,
+    HighScoreComponent
   ],
   imports: [
     BrowserModule,

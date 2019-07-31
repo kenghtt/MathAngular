@@ -27,6 +27,7 @@ export class PlayComponent implements OnInit {
   countDownNumber = 30;
 
 
+
   checkAnswer(event){
     if(event.target.innerText == this.answer){
       this.numOfCorrectAnswers++;

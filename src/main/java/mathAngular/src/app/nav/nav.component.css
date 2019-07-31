@@ -29,3 +29,7 @@ a {
 :hover {
    background: #8E2BFF;
  }
+
+.navOptions:hover{
+  background-color: #e0e0e0 ;
+}
