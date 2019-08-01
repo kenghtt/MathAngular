@@ -32,4 +32,12 @@ a {
 
 .navOptions:hover{
   background-color: #e0e0e0 ;
+  color: black;
+
+}
+
+.navOptions{
+  font-weight: bold;
+  padding: .5em 1em .5em 1em
+
 }
