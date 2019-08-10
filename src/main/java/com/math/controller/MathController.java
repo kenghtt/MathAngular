@@ -1,7 +1,10 @@
 package com.math.controller;
 
 //import com.math.entity.HighScoreEntity;
+
+import com.math.entity.HighScoreEntity;
 import com.math.entity.UsersEntity;
+import com.math.respository.HighScoreRepository;
 import com.math.respository.UsersRepository;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -38,8 +41,8 @@ import java.util.Random;
 //@RequestMapping(value = "/angularMath/v1")
 public class MathController {
 
-//    @Autowired
-//    HighScoreRepository highScoreRepository;
+    @Autowired
+    HighScoreRepository highScoreRepository;
 
     @Autowired
     UsersRepository usersRepository;
@@ -57,11 +60,12 @@ public class MathController {
         return usersRepository.findAll();
     }
 
-//    @PostMapping(value = "/save")
-//    public List<HighScoreEntity> persist(@RequestBody final HighScoreEntity highScore) {
-//        highScoreRepository.save(highScore);
-//        return highScoreRepository.findAll();
-//    }
+    @PostMapping(value = "/highscore")
+    @ResponseBody
+    public List<HighScoreEntity> persist(@RequestBody final HighScoreEntity highScore) {
+        highScoreRepository.save(highScore);
+        return highScoreRepository.findAll();
+    }
 
     @CrossOrigin
     @GetMapping("/mathQuestions")

@@ -19,7 +19,7 @@ import javax.persistence.Table;
  * To change this template use File | Settings | File Templates.
  */
 @Entity
-@Table(name="users")
+@Table(name="workplace")
 
 public class UsersEntity {
 
