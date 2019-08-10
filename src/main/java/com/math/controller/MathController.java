@@ -1,16 +1,25 @@
 package com.math.controller;
 
+//import com.math.entity.HighScoreEntity;
+import com.math.entity.UsersEntity;
+import com.math.respository.UsersRepository;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Random;
+
+//import com.math.respository.HighScoreRepository;
 
 /**
  * Project: MathAngular
@@ -26,13 +35,33 @@ import java.util.Random;
 
 
 @Controller
+//@RequestMapping(value = "/angularMath/v1")
 public class MathController {
+
+//    @Autowired
+//    HighScoreRepository highScoreRepository;
+
+    @Autowired
+    UsersRepository usersRepository;
 
     @GetMapping("/hello")
     @ResponseBody
     public String sayHello() {
         return "Hello World";
     }
+
+    @PostMapping(value = "/post")
+    @ResponseBody
+    public List<UsersEntity> persist(@RequestBody final UsersEntity user) {
+        usersRepository.save(user);
+        return usersRepository.findAll();
+    }
+
+//    @PostMapping(value = "/save")
+//    public List<HighScoreEntity> persist(@RequestBody final HighScoreEntity highScore) {
+//        highScoreRepository.save(highScore);
+//        return highScoreRepository.findAll();
+//    }
 
     @CrossOrigin
     @GetMapping("/mathQuestions")
