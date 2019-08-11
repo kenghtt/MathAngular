@@ -60,9 +60,15 @@ public class MathController {
         return usersRepository.findAll();
     }
 
+    @GetMapping("/highscore")
+    @ResponseBody
+    public List<HighScoreEntity> getAllHighscore() {
+        return highScoreRepository.findAll();
+    }
+
     @PostMapping(value = "/highscore")
     @ResponseBody
-    public List<HighScoreEntity> persist(@RequestBody final HighScoreEntity highScore) {
+    public List<HighScoreEntity> saveHighscore(@RequestBody final HighScoreEntity highScore) {
         highScoreRepository.save(highScore);
         return highScoreRepository.findAll();
     }
