@@ -60,12 +60,14 @@ public class MathController {
         return usersRepository.findAll();
     }
 
+    @CrossOrigin
     @GetMapping("/highscore")
     @ResponseBody
     public List<HighScoreEntity> getAllHighscore() {
         return highScoreRepository.findAll();
     }
 
+    @CrossOrigin
     @PostMapping(value = "/highscore")
     @ResponseBody
     public List<HighScoreEntity> saveHighscore(@RequestBody final HighScoreEntity highScore) {

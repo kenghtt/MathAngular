@@ -1,11 +1,22 @@
+
+
+
 <div id="HighScore">
   <p>High Scores</p>
   <mat-list role="list">
-    <mat-list-item role="listitem">1. Jeremy</mat-list-item>
+    <mat-list-item role="listitem">1. JEREMYY</mat-list-item>
     <mat-list-item role="listitem">2. Yer</mat-list-item>
     <mat-list-item role="listitem">3. Tommy</mat-list-item>
     <mat-list-item role="listitem">4. Emily</mat-list-item>
 
   </mat-list>
+  <ol>
+    <li>HELLO</li>
+    <li *ngFor="let element of response">
+      {{ element.user }}
+    </li>
+  </ol>
+
+
 
 </div>
