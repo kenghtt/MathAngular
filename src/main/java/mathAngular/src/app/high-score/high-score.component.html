@@ -4,17 +4,17 @@
 <div id="HighScore">
   <p>High Scores</p>
   <mat-list role="list">
-    <mat-list-item role="listitem">1. JEREMYY</mat-list-item>
-    <mat-list-item role="listitem">2. Yer</mat-list-item>
-    <mat-list-item role="listitem">3. Tommy</mat-list-item>
-    <mat-list-item role="listitem">4. Emily</mat-list-item>
+    <mat-list-item *ngFor="let element of response">{{element.id}}. {{ element.user }} {{element.score}}</mat-list-item>
+    <!--<mat-list-item role="listitem">2. Yer</mat-list-item>-->
+    <!--<mat-list-item role="listitem">3. Tommy</mat-list-item>-->
+    <!--<mat-list-item role="listitem">4. Emily</mat-list-item>-->
 
   </mat-list>
-  <ol>
-    <li *ngFor="let element of response">
-      {{ element.user }} {{element.score}}
-    </li>
-  </ol>
+  <!--<ol>-->
+    <!--<li *ngFor="let element of response">-->
+      <!--{{ element.user }} {{element.score}}-->
+    <!--</li>-->
+  <!--</ol>-->
 
 
 
